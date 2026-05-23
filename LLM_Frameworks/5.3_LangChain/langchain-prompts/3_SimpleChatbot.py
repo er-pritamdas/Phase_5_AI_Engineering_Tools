@@ -1,6 +1,5 @@
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_ollama import ChatOllama
-from langchain_core.prompts import PromptTemplate
 
 
 
@@ -73,6 +72,6 @@ while True:
     print(response.content)
 
 print("----------------------------- Chat history ----------------------------")
-# for i in ChaHistory:
-#     print(f"# - {i}")
-print(ChaHistory)
+for i in ChaHistory:
+    print(f"# {i.type}- {i.content}")
+# print(ChaHistory)
