@@ -1,0 +1,5 @@
+.env
+venv
+
+# Local Model Downloads Cache
+*_cache
