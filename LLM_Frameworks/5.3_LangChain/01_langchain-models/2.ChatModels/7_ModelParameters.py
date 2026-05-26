@@ -62,6 +62,20 @@ print("Long:", long_llm.invoke(PromptFromUser).content)
 
 
 
+# ============================================================
+# PARAMETER CHEAT SHEET
+# ============================================================
+#
+# | Task                  | temperature | max_tokens |
+# |-----------------------|-------------|------------|
+# | Code generation       | 0           | 2000       |
+# | Factual Q&A           | 0           | 500        |
+# | Chatbot               | 0.7         | 1000       |
+# | Creative writing      | 1.0         | 2000       |
+# | Data extraction/JSON  | 0           | 500        |
+# | Brainstorming         | 1.0         | 1000       |
+#
+# ============================================================
 
 
 
@@ -90,3 +104,5 @@ llm = ChatOllama(
     timeout=30,
     max_retries=2,
 )
+
+
